@@ -25,6 +25,7 @@ p{
     font-size:.9rem;
     font-weight:400;
     letter-spacing:.03px;
+    line-height:1.5rem;
 }
 
 h1{
@@ -59,10 +60,33 @@ h4{
     line-height: 1.4rem;
 }
 
+main{
+    background:#000;
+    max-width:1440px;
+    margin:0 auto;
+}
+
+main section{
+    max-width:1040px;
+    margin:0 auto;
+    padding:100px 0;
+    background: #000;
+}
+
+.main-title{
+    text-align:center;
+    width:671px;
+    margin:0 auto;
+    margin-bottom:58px;
+}
+.main-title .heading{
+    margin-bottom:1rem;
+}
+
 /* ----------------------header-seciton---------------------------------------- */
 
 .header{
-    background:#171717;
+    background: linear-gradient(90deg, #000 ,rgb(16, 16, 16) );
 }
 
 .header > div{
@@ -177,7 +201,9 @@ h4{
 
 
 .img-top{
-    padding:0 1.5rem;
+    height:6rem;
+    width:12rem;
+    padding:0 .8rem;
     border-radius:.8rem;
     box-sizing: border-box;
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -195,4 +221,49 @@ h4{
     line-height:1.5rem;
     letter-spacing:0.3px;
     margin-bottom:.8rem;
+}
+
+/* --------------------habit-section------------------------------- */  
+
+
+.habit-container{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+}
+.habit-container .single-habit{
+    text-align:center;
+    padding:.8rem;
+}
+
+.habit-container .single-habit img{
+    border-radius:50%;
+    border:1px solid #eee;
+}
+
+.habit-container .single-habit h4{
+    margin:1.8rem 0 .5rem 0;
+}
+
+/* -------------run-section------------------------------ */
+.run-section{
+    display:flex;
+    gap:15rem;
+    justify-content:center;
+    border-radius: 1.125rem;
+    background: rgb(34, 34, 34);
+    padding:2rem;
+}
+.run-section .run-image img{
+    width:366px;
+    height:312px;
+    border-radius:1.125rem;
+}
+
+.run-section .run-details{
+    width:38%;
+}
+
+
+.run-section .run-details p{
+    margin: .9rem 0 1.8rem 0;
 }
