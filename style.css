@@ -69,7 +69,7 @@ main{
 main section{
     max-width:1040px;
     margin:0 auto;
-    padding:100px 0;
+    padding:50px 0;
     background: #000;
 }
 
@@ -245,7 +245,7 @@ main section{
 }
 
 /* -------------run-section------------------------------ */
-.run-section{
+.run-area{
     display:flex;
     gap:15rem;
     justify-content:center;
@@ -266,4 +266,108 @@ main section{
 
 .run-section .run-details p{
     margin: .9rem 0 1.8rem 0;
+}
+
+/* -------------------physiologists-section----------------------------- */
+.single-physiologists{
+    align-items: start;
+    justify-content:center;
+    gap:12rem;
+    margin:4rem 0;
+}
+
+.single-physiologists .physiologists1-dtls{
+    width:42%;
+    display:flex;
+    flex-direction: column;
+    gap:2rem;
+    text-align:left;
+}
+
+
+.single-physiologists .physiologists-card{
+    border:1px solid #e6533c;
+    border-radius:1rem;
+    padding:1rem;
+    text-align:center;
+}
+
+.single-physiologists .physiologists-card h3{
+    font-size:2rem;
+    margin-top:1rem;
+}
+
+
+.single-physiologists .physiologists-card .physiologists-img img{
+    border-radius:50%;
+    height:35%;
+    width:35%;
+    border:.3rem solid #e6533c;
+}
+
+.physiologists-card .title{
+    margin:1rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
+.media-icon{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:1rem;
+    margin-bottom:1rem;
+}
+
+
+.physiologists-img{
+    background:#efdbd8;
+    border-top-left-radius:1rem;
+    border-top-right-radius:1rem;
+}
+
+.media-icon li{
+    height:2rem;
+    width:2rem;
+    background-color: #E6533C;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+}
+
+#fb{
+    background:rgb(13, 65, 223);
+}
+
+#ins{
+    background: #c31c03;
+}
+
+#twi{
+    background: rgb(5, 222, 241);
+}
+
+#ytube{
+    background: rgb(246, 2, 2);
+}
+
+.mes-btn{
+    background:none;
+    border:1px solid #E6533C;
+    padding:.7rem 2rem;
+}
+
+.sub-btn{
+    padding:.7rem 2rem;
+    margin-right:1rem;
+}
+
+.mes-btn a{
+    color: #e6533c;
+}
+
+.phy-btn{
+    padding:1.2rem 1.5rem;
+    width:11rem;
 }
