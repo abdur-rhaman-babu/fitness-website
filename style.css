@@ -60,10 +60,12 @@ h4{
     line-height: 1.4rem;
 }
 
-main{
+main, footer{
     background:#000;
     max-width:1440px;
     margin:0 auto;
+    position:relative;
+    /* z-index:-999999; */
 }
 
 main section{
@@ -75,7 +77,7 @@ main section{
 
 .main-title{
     text-align:center;
-    width:671px;
+    width:625px;
     margin:0 auto;
     margin-bottom:58px;
 }
@@ -89,6 +91,11 @@ main section{
     background: linear-gradient(90deg, #000 ,rgb(16, 16, 16) );
 }
 
+.bar{
+    font-size:2rem;
+    display:none;
+}
+
 .header > div{
     max-width:1440px;
     margin:0 auto;
@@ -97,11 +104,12 @@ main section{
 .header .navbar{
     padding:57px 13%;
     justify-content:space-between;
-
 }
 
 .header .nav-menu{
     gap:3rem;
+    border-radius:2.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 
@@ -130,7 +138,6 @@ main section{
 .banner{
     justify-content:center;
     gap: 4.8rem;
-    position:relative;
 }
 
 .banner h1{
@@ -142,6 +149,10 @@ main section{
     font-size:1rem;
     line-height:1.5rem;
     margin-bottom:1.7rem;
+}
+
+.banner .banner-des{
+   max-width:470px;
 }
 
 .banner-details .download-btn{
@@ -158,9 +169,12 @@ main section{
   font-family: 'Miama', sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 150px;
+  font-size: 9rem;
 }
 
+.banner-image{
+    position:relative;
+}
 
 .img-bottom{
     height:6rem;
@@ -175,7 +189,7 @@ main section{
     backdrop-filter: blur(20px);
     background: rgba(48, 48, 48, 0.54);
     position:absolute;
-    right: 445px;
+    right: 250px;
     bottom:72px;
 }
 
@@ -210,7 +224,7 @@ main section{
     backdrop-filter: blur(20px);
     background: rgba(48, 48, 48, 0.54);
     position:absolute;
-    right: 110px;
+    right: -55px;
     top:115px;
 }
 
@@ -250,7 +264,7 @@ main section{
     gap:15rem;
     justify-content:center;
     border-radius: 1.125rem;
-    background: rgb(34, 34, 34);
+    background: #222222;
     padding:2rem;
 }
 .run-section .run-image img{
@@ -266,108 +280,4 @@ main section{
 
 .run-section .run-details p{
     margin: .9rem 0 1.8rem 0;
-}
-
-/* -------------------physiologists-section----------------------------- */
-.single-physiologists{
-    align-items: start;
-    justify-content:center;
-    gap:12rem;
-    margin:4rem 0;
-}
-
-.single-physiologists .physiologists1-dtls{
-    width:42%;
-    display:flex;
-    flex-direction: column;
-    gap:2rem;
-    text-align:left;
-}
-
-
-.single-physiologists .physiologists-card{
-    border:1px solid #e6533c;
-    border-radius:1rem;
-    padding:1rem;
-    text-align:center;
-}
-
-.single-physiologists .physiologists-card h3{
-    font-size:2rem;
-    margin-top:1rem;
-}
-
-
-.single-physiologists .physiologists-card .physiologists-img img{
-    border-radius:50%;
-    height:35%;
-    width:35%;
-    border:.3rem solid #e6533c;
-}
-
-.physiologists-card .title{
-    margin:1rem;
-    color: rgba(255, 255, 255, 0.5);
-}
-
-
-.media-icon{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    gap:1rem;
-    margin-bottom:1rem;
-}
-
-
-.physiologists-img{
-    background:#efdbd8;
-    border-top-left-radius:1rem;
-    border-top-right-radius:1rem;
-}
-
-.media-icon li{
-    height:2rem;
-    width:2rem;
-    background-color: #E6533C;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    border-radius:50%;
-}
-
-#fb{
-    background:rgb(13, 65, 223);
-}
-
-#ins{
-    background: #c31c03;
-}
-
-#twi{
-    background: rgb(5, 222, 241);
-}
-
-#ytube{
-    background: rgb(246, 2, 2);
-}
-
-.mes-btn{
-    background:none;
-    border:1px solid #E6533C;
-    padding:.7rem 2rem;
-}
-
-.sub-btn{
-    padding:.7rem 2rem;
-    margin-right:1rem;
-}
-
-.mes-btn a{
-    color: #e6533c;
-}
-
-.phy-btn{
-    padding:1.2rem 1.5rem;
-    width:11rem;
 }
