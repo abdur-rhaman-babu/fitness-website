@@ -60,13 +60,13 @@ h4{
     line-height: 1.4rem;
 }
 
-main, footer{
+main{
     background:#000;
     max-width:1440px;
     margin:0 auto;
     position:relative;
-    /* z-index:-999999; */
 }
+
 
 main section{
     max-width:1040px;
@@ -88,7 +88,7 @@ main section{
 /* ----------------------header-seciton---------------------------------------- */
 
 .header{
-    background: linear-gradient(90deg, #000 ,rgb(16, 16, 16) );
+    background: linear-gradient(90deg, #000 ,rgb(16, 16, 16) )
 }
 
 .bar{
@@ -110,6 +110,7 @@ main section{
     gap:3rem;
     border-radius:2.5rem;
     border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: .2rem 1rem .2rem .3rem;
 }
 
 
@@ -138,6 +139,7 @@ main section{
 .banner{
     justify-content:center;
     gap: 4.8rem;
+    padding-bottom:6rem;
 }
 
 .banner h1{
@@ -575,3 +577,389 @@ main section{
     border-radius:1.5rem;
 }
 
+/* ------------------footer-section-------------------------- */
+.footer{
+    background: #1a1a1a;
+    padding:7rem 9%;
+}
+
+.footer-section{
+    justify-content:center;
+    gap:6rem;
+    align-items:start;
+}
+
+.get-started{
+    margin-bottom:2rem;
+}
+
+.footer-section li{
+    margin-bottom:1rem;
+    font-size:1.5rem;
+    opacity: 0.5;
+}
+
+.footer-logo{
+    width:48%;
+}
+
+.footer-logo .logo{
+    font-size:4rem;
+    margin-bottom:2rem;
+    color: #e6533C;
+    font-style:italic;
+}
+
+.footer-logo p{
+   font-size:1.2rem;
+   line-height:2rem;
+}
+
+hr{
+    margin:3rem 0;
+    opacity:0.5;
+}
+
+
+
+/* -------------------Responsive for Mobile here--------------------- */
+
+@media screen and (max-width:576px) {
+
+    /* -------------nav-bar-------------- */
+
+    .navbar .nav-menu{
+        display:none;
+    }
+
+    .bar{
+        display:block;
+    }
+
+    .header .navbar{
+        padding:2.5rem 7%;
+    }
+
+    /* -----------banner-area------------ */
+    .banner{
+        flex-direction:column;
+    }
+     
+    .banner h1{
+        font-size:3rem;
+        margin-bottom:1.8rem;
+    }
+    .banner .banner-des{
+       max-width:100%;
+    }
+
+    .join-btn,
+    .banner-details .download-btn{
+        width:47%;
+        padding:1rem .5rem;
+    }
+
+    .join-btn a,
+    .banner-details .download-btn a{
+        font-size:1rem;
+    }
+    
+    .banner .banner-details{
+        width:90%;
+    }
+    
+    .banner .banner-details .shape{
+      font-size: 3rem;
+    }
+    
+    .img-bottom{
+        height:6rem;
+        width:10rem;
+        right: 200px;
+    }
+    
+    .banner-image .img-bottom .circle{
+        height:2rem;
+        width:2rem;
+    }
+    
+    .times{
+        font-size:1.5rem;
+    }
+    
+    .img-top{
+        height:6rem;
+        width:12rem;
+        right: -25px;
+        top:150px;
+    }
+    
+    .times1{
+        font-size:2rem;
+    }
+
+    /* ---team-section---- */
+    .main-title{
+        width:70%;
+    }
+    .main-title h1{
+        font-size:2rem;
+    }
+    .team-section .team-container{
+        grid-template-columns:1fr;
+    }
+
+    /* ----footer-section------ */
+    .footer-section{
+        display:block;
+    }
+
+    .footer-logo{
+        width:100%;
+        margin-bottom:2rem;
+    }
+
+    .footer{
+        padding:3rem 3.5%;
+    }
+
+    .footer-mid{
+        margin-bottom:3rem;
+    }
+
+    /* -------bmi-section---------- */
+    .bmi-container{
+        display: block;
+    }
+
+    .bmi-section .main-title{
+        padding-left: 2%;
+    }
+    
+    .bmi-left-table td,th{
+        text-align:left;
+        padding:1rem 2rem;
+    }
+    
+    .bmi-left{
+        margin-left:1rem;
+        margin-bottom:3rem;
+    }
+    
+    .bmi-right{
+        padding:0 4%;
+    }
+
+    .bmi-right .description{
+        margin-top:2rem;
+    }
+
+    /* ------------training--------------------section */
+    .train-area .train-title h1{
+        margin-bottom:1rem;
+        font-size:2.8rem;
+    }
+    .train-area .train-title{
+        padding-left:1rem;
+    }
+    
+    .train-section .train-area .train-container{
+       grid-template-columns:repeat(2,1fr);
+       padding:0 3%;
+    }
+
+    /* ----------------physiologists---------------- */
+    .single-physiologists{
+        flex-direction:column-reverse;
+        gap:3rem;
+    }
+    
+    .single-physiologists2{
+        flex-direction:column;
+        gap:3rem;
+    }
+
+    .single-physiologists .physiologists1-dtls,
+    .single-physiologists2 .physiologists1-dtls{
+        width:90%;
+        text-align:center;
+    }
+
+    .physio-btn{
+        text-align:center;
+    }
+    
+    /* -------------------run-section----------------- */
+    .run-area{
+        flex-direction:column;
+        gap:3rem;
+    }
+    .run-section .run-image img{
+        width:100%;
+    }
+    
+    .run-section .run-details{
+        width:100%;
+    }
+
+    .run-section .run-details h1{
+        font-size:2.5rem;
+    }
+
+    .run-section .run-details .run-btn{
+        width:100%;
+    }
+
+
+ /* --------------------habit-section------------------------------- */  
+
+.habit-container{
+    grid-template-columns:1fr;
+}
+
+.single-habit p{
+    padding:0 5rem;
+}
+
+.habit-area .heading{
+    font-size:1.6rem;
+}
+}   
+
+
+/* -------------------Responsive for Tablate here--------------------- */
+@media screen and (min-width:576px) and (max-width:992px) {
+
+     /* -----------banner-area------------ */
+     .banner{
+        flex-direction:column;
+    }
+     
+    .banner .banner-details{
+        width:100%;
+        padding:0 6rem;
+        padding-right:7rem;
+    }
+    
+    .banner .banner-details .shape{
+      font-size:5rem;
+    }
+    
+    /* ------team-section-------- */
+    .main-title{
+        width:70%;
+    }
+    .main-title h1{
+        font-size:2.5rem;
+    }
+    .team-section .team-container{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    /* --------footer-section-------------- */
+    .footer-section{
+        display:block;
+    }
+
+    .footer-logo{
+        width:66%;
+        margin-bottom:6rem;
+    }
+
+    .footer{
+        padding:3rem 3.5%;
+    }
+
+    .footer-mid{
+        float:right;
+        margin-right:250px;
+    }
+
+    /* -------------bmi-section--------------------- */
+    .bmi-container{
+        display: block;
+    }
+
+    .bmi-section .main-title{
+        padding-left: 2%;
+    }
+    
+    .bmi-left-table td,th{
+        text-align:left;
+        padding:1rem 2rem;
+    }
+    
+    .bmi-left{
+        margin-left:2rem;
+        margin-bottom:3rem;
+    }
+    
+    .bmi-right{
+        padding:0 4%;
+    }
+    .bmi-right .description{
+        margin-top:2rem;
+    }
+
+    /* ---------------training-section--------- */
+    .train-area .train-title h1{
+        margin-bottom:1rem;
+        font-size:3rem;
+    }
+
+    .train-section .train-area .train-container{
+       padding:0 3%;
+    }
+
+    .train-area .train-title{
+        padding-left:1.5rem;
+    }
+
+    /* ----------------physiologists---------------- */
+    .single-physiologists,
+    .single-physiologists2{
+        gap:3rem;
+        padding:0 1%;
+    }
+
+    /* -------------------run-section----------------- */
+    .run-area{
+        gap:2.5rem;
+        margin:0 1rem;
+    }
+    
+    .run-section .run-details{
+        width:50%;
+    }
+
+    .run-section .run-details h1{
+        font-size:2.5rem;
+    }
+    
+    .run-section .run-details .run-btn{
+        width:90%;
+    }
+
+    .run-section .run-image img{
+        width:100%;
+    }
+
+    /* --------------------habit-section------------------------------- */  
+
+    .habit-container{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .single-habit p{
+        padding:0 5rem;
+    }
+
+    .habit-area .heading{
+        font-size:3rem;
+    }
+
+    .habit-area .description{
+        padding:0 5rem;
+    }
+        
+}   
