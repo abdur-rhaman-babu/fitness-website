@@ -466,3 +466,112 @@ main section{
 #exer-6{
     background:#021ff9;
 }
+
+/* -----------------BMI - section----------------------- */
+
+.bmi-section{
+    background: #222222;
+    max-width:1440px;
+    margin:0 auto;
+}
+
+.bmi-container{
+    justify-content:center;
+    align-items: start;
+    gap: 10rem;
+}
+
+.bmi-section .main-title{
+    text-align:left;
+    background: #000;
+    width: 100%;
+    padding: 2rem 27%;
+    margin-top:0;
+    margin-top:-3.2rem;
+    padding-bottom:4rem;
+}
+
+
+.bmi-left-table table{
+   border-collapse: collapse;
+   margin-right:1rem;
+}
+
+.bmi-left-table td,th{
+    border: 1px solid #454242;
+    opacity: 0.5;
+    padding:1.5rem;
+    text-align:left;
+}
+
+.bmi-left-table table th{
+    opacity: 100%;
+}
+
+
+.bmi-left h3{
+    margin-bottom:2.5rem;
+}
+
+.bmi-right .right-title{
+    margin-bottom:2rem;
+}
+
+
+.bmi-right-form input, select{
+    width:100%;
+    padding:.8rem .5rem;
+    border-radius:.3rem;
+    background: #393939;
+    border:none;
+    outline: none;
+}
+
+.bmi-right-form select{
+   color:#6a716c;
+}
+
+.bmi-right-form select option{
+   color:#b0b0b0;
+}
+
+.bmi-right-form .height-weight, .age-gender{
+    display:flex;
+    gap:.5rem;
+    margin:1rem 0;
+}
+
+.bmi-btn{
+    margin-top:2rem;
+    padding:.8rem 3rem;
+}
+
+/* ---------------------------team-section------------------------- */
+.team-section .team-container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:2rem;
+    background:#222222;
+    padding:2rem;
+    border-radius:1.5rem;
+}
+
+
+.single-team .single-img {
+    border-radius:1.5rem;
+    height:280px;
+    position:relative;
+}
+
+.single-team .single-text {
+    position:absolute;
+    top:220px;
+    left:25px;
+}
+
+.single-team .single-img img{
+    height:100%;
+    width:100%;
+    border-radius:1.5rem;
+}
+
