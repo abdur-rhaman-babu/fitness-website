@@ -88,7 +88,8 @@ main section{
 /* ----------------------header-seciton---------------------------------------- */
 
 .header{
-    background: linear-gradient(90deg, #000 ,rgb(16, 16, 16) )
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgb(29, 29, 31) 55%, rgba(0,0,0,1) 100%);
 }
 
 .bar{
@@ -138,8 +139,8 @@ main section{
 /* banner-section */
 .banner{
     justify-content:center;
-    gap: 4.8rem;
-    padding-bottom:6rem;
+    gap: 7rem;
+    padding-bottom:0rem;
 }
 
 .banner h1{
@@ -153,6 +154,10 @@ main section{
     margin-bottom:1.7rem;
 }
 
+.banner-details{
+    width:43%;
+}
+
 .banner .banner-des{
    max-width:470px;
 }
@@ -161,10 +166,6 @@ main section{
     margin-left:.8rem;
     border:1px solid #fff;
     background: #111;
-}
-
-.banner .banner-details{
-    width:43%;
 }
 
 .banner .banner-details .shape{
@@ -200,6 +201,15 @@ main section{
     width:2.5rem;
     border-radius:100%;
     background:#E6533C;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.banner-image .img-bottom .circle img{
+    height:1.2rem;
+    width:1.2rem;
+    margin-left:.2rem;
 }
 
 .bottom-dtls{
@@ -241,7 +251,9 @@ main section{
 
 /* --------------------habit-section------------------------------- */  
 
-
+.habit-section{
+    padding-top:6rem;
+}
 .habit-container{
     display:grid;
     grid-template-columns:repeat(4,1fr);
@@ -522,11 +534,12 @@ main section{
 
 .bmi-right-form input, select{
     width:100%;
-    padding:.8rem .5rem;
+    padding:1rem .5rem;
     border-radius:.3rem;
     background: #393939;
     border:none;
     outline: none;
+    border-right:.5rem solid #393939;
 }
 
 .bmi-right-form select{
@@ -643,6 +656,7 @@ hr{
     /* -----------banner-area------------ */
     .banner{
         flex-direction:column;
+        gap:3rem;
     }
      
     .banner h1{
@@ -673,8 +687,8 @@ hr{
     }
     
     .img-bottom{
-        height:6rem;
-        width:10rem;
+        height:5rem;
+        width:9rem;
         right: 200px;
     }
     
@@ -684,18 +698,28 @@ hr{
     }
     
     .times{
-        font-size:1.5rem;
+        font-size:1.2rem;
+        line-height:1rem;
+        margin-bottom:.2rem;
     }
     
     .img-top{
-        height:6rem;
-        width:12rem;
-        right: -25px;
+        height:5rem;
+        width:8.5rem;
+        right: -10px;
         top:150px;
+        display:flex;
+        align-items:center;
     }
     
     .times1{
         font-size:2rem;
+        margin-bottom:.2rem;
+        margin-top:.8rem;
+    }
+
+    .bottom-dtls .tutorial{
+        font-size:.6rem;
     }
 
     /* ---team-section---- */
